@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './GlobalStyles.css';
+
 import Menu from './components/Menu';
 import BannerMain from './components/BannerMain';
 import Carousel from './components/Carousel';
@@ -9,7 +11,7 @@ import dadosIniciais from './Data/dados_iniciais.json';
 
 function App() {
   return (
-    <div>
+    <> 
     <Menu />
 
     <BannerMain 
@@ -44,7 +46,7 @@ function App() {
     />      
 
     <Footer />
-  </div>
+  </>
   );
 }
 

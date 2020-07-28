@@ -10,6 +10,19 @@ export const FooterBase = styled.footer`
   padding-bottom: 32px;
   color: var(--white);
   text-align: center;
+
+  > a{
+    cursor: pointer;
+
+    >img{
+      width: 20px;
+      height: 20px;
+    }
+    &:hover{
+      opacity: 0.7;
+    }
+
+  }
   @media (max-width: 800px) {
     margin-bottom: 50px;
   }

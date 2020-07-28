@@ -4,8 +4,8 @@ import { FooterBase } from './styles';
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://www.alura.com.br/">
-        <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
+      <a href="https://linkedin.com/in/renan-pereira-968bb61b0">
+        <img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt="Logo"/>
       </a>
       <p>
         Orgulhosamente criado durante a
