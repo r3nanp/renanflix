@@ -1,98 +1,90 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Indie Music",
       "cor": "#6BD1FF",
       "link_extra": {
-        "url": "https://www.alura.com.br/cursos-online-front-end"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Sweater Weather - The Neighbourhood",
+          "url": "https://youtu.be/GCdwKhTtNNw"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "Clhorine - Twenty One Pilots",
+          "url": "https://youtu.be/eJnQBXmZ7Ek"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "On Melancholy Hill - Gorillaz",
+          "url": "https://youtu.be/04mfKJWDSzI"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "At the Door - The Strokes",
+          "url": "https://www.youtube.com/watch?v=9CAz_vvsK9M"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Are You Bored Yet? - Wallows",
+          "url": "https://youtu.be/wIgmyE5Juzw"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "These Days - Wallows",
+          "url": "https://www.youtube.com/watch?v=pgWZQr7r0l0"
         },
         {
-          "titulo": "Novidades do Angular v9",
-          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+          "titulo": "Why'd Only Call Me When You're High?",
+          "url": "https://www.youtube.com/watch?v=6366dxFf-Os"
         },
         {
-          "titulo": "Base para aprender os frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Clint Eastwood - Gorillaz",
+          "url": "https://www.youtube.com/watch?v=1V_xRb0x9aw"
         }        
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "The Strokes",
       "cor": "#00C86F",
-      "link_extra": {
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "Bad Decisions",
+          "url": "https://www.youtube.com/watch?v=5fbZTnZDvPA"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Reptilia",
+          "url": "https://youtu.be/b8-tXG8KrWs"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "You Only Live Once",
+          "url": "https://youtu.be/pT68FS3YbQ4"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Someday",
+          "url": "https://youtu.be/knU9gRUWCno"
         }, 
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Hard to Explain",
+          "url": "https://youtu.be/BXkm6h6uq0k"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
-      "link_extra": {
-        "url": "https://www.alura.com.br/formacao-data-science"
-      },
+      "titulo": "Arctic Monkeys",
+      "cor": "darkblue",
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Fluorescent Adolescent",
+          "url": "https://www.youtube.com/watch?v=ma9I9VBKPiw"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Snap Out Of It",
+          "url": "https://www.youtube.com/watch?v=H8tLS_NOWLs"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Four Out of Five",
+          "url": "https://youtu.be/71Es-8FfATo"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "R U Mine?",
+          "url": "https://www.youtube.com/watch?v=VQH8ZTgna3Q"
         }
       ]
     },
@@ -148,31 +140,28 @@
       ]
     },
     {
-      "titulo": "Aprendendo a aprender tecnologia",
+      "titulo": "Twenty One Pilots",
       "cor": "#6b5be2",
-      "link_extra": {
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
       "videos": [
         {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+          "titulo": "My Blood",
+          "url": "https://www.youtube.com/watch?v=8mn-FFjIbo8"
         },
         {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+          "titulo": "Neon Gravestones",
+          "url": "https://www.youtube.com/watch?v=5MeQ9rA2Ifg"
         },
         {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+          "titulo": "Tear In My Heart",
+          "url": "https://www.youtube.com/watch?v=nky4me4NP70"
         },
         {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+          "titulo": "Car Radio",
+          "url": "https://www.youtube.com/watch?v=92XVwY54h5k"
         },
         {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          "titulo": "Heavydirtysoul",
+          "url": "https://www.youtube.com/watch?v=r_9Kf0D5BTs"
         }
       ]
     }

@@ -1,15 +1,15 @@
 import React from 'react';
 
-import './GlobalStyles.css';
+import '../../GlobalStyles.css';
 
-import Menu from './components/Menu';
-import BannerMain from './components/BannerMain';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
+import Menu from '../../components/Menu';
+import BannerMain from '../../components/BannerMain';
+import Carousel from '../../components/Carousel';
+import Footer from '../../components/Footer';
 
-import dadosIniciais from './Data/dados_iniciais.json';  
+import dadosIniciais from '../../Data/dados_iniciais.json';  
 
-function App() {
+function Home() {
   return (
     <> 
     <Menu />
@@ -50,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

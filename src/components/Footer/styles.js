@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const FooterBase = styled.footer`
   background: var(--outline);
   border-top: 2px solid var(--primary);
@@ -15,13 +14,12 @@ export const FooterBase = styled.footer`
     cursor: pointer;
 
     >img{
-      width: 20px;
-      height: 20px;
+      width: 40px;
+      height: 40px;
     }
     &:hover{
-      opacity: 0.7;
+      opacity: 1;
     }
-
   }
   @media (max-width: 800px) {
     margin-bottom: 50px;
