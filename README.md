@@ -1,5 +1,5 @@
 ## Renanflix
-Uma SPA(Single Page Application) baseada na Netflix, feito na Imersão React da Alura.
+Uma SPA (Single Page Application) baseada na Netflix, projeto resultado da Imersão React da Alura.
 
 ### Link para ver o resultado do projeto:
 []()
