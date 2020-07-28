@@ -18,6 +18,7 @@ const Container = styled.ul`
     
     &:before {
       font-size: 30px;
+      color: var(--frontEnd);
     }
   }
   
