@@ -5,7 +5,7 @@ Uma SPA(Single Page Application) baseada na Netflix, feito na Imersão React da 
 []()
 
 ### Bibliotecas utilizadas
-[*] react-router-dom
-[*] styled-components
+(*) react-router-dom
+(*) styled-components
 
 ### Screenshot
