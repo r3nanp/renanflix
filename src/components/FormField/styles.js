@@ -9,6 +9,7 @@ export const Input = styled.input`
 
   &:hover {
     color: var(--frontEnd);
+    border-bottom: 3px solid var(--primary);
     opacity: 0.7;
   }
 `;

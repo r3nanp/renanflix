@@ -10,9 +10,10 @@ export const Button = styled.button`
   font-size: 15px;
   cursor: pointer;
   outline: 0;
+  color: var(--primary);
 
   &:hover{
-    color: var(--primary);
+    color: var(--black);
     opacity: 0.7;
   }
 `;

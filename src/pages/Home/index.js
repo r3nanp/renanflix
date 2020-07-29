@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../GlobalStyles.css';
+import GlobalStyles from '../../GlobalStyles';
 
 import Menu from '../../components/Menu';
 import BannerMain from '../../components/BannerMain';
@@ -11,7 +11,8 @@ import dadosIniciais from '../../Data/dados_iniciais.json';
 
 function Home() {
   return (
-    <> 
+    <>
+    <GlobalStyles />
     <Menu />
 
     <BannerMain 

@@ -11,6 +11,9 @@ export const VideoContainer = styled.div`
 `;
 
 export const ResponsiveIframe = styled.iframe`
+  display: flex;
+  flex-direction: column;
+  
   position: absolute;
   top: 0;
   left: 0;
