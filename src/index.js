@@ -6,15 +6,16 @@ import {
   Route
 } from 'react-router-dom';
 
+import Button from './components/Button';
 import Home from './pages/Home';
 import Video from './pages/Cadastro/Video';
 import Categoria from './pages/Cadastro/Categoria';
 
 const error = () => (
   <div> 404 
-    <a href="https://mariosouto.com/flappy-bird-devsoutinho/">
+    <Button href="https://mariosouto.com/flappy-bird-devsoutinho/">
       Página não encontrada
-    </a>
+    </Button>
   </div>
 );
 
