@@ -31,18 +31,18 @@ function Categoria() {
   }
 
   useEffect(() => {
-    if (window.location.href.includes('localhost')) {
-      const URL = 'https://renanflix.herokuapp.com/categorias';
-      fetch(URL)
-        .then(async (res) => {
-          if (res.ok) {
-            const resposta = await res.json();
-            setCategorias(resposta);
-            return;
-          }
-          throw new Error('Não foi possível pegar os dados');
-        });
-    }
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://renanflix.herokuapp.com/categorias';
+    fetch(URL)
+      .then(async (res) => {
+        if (res.ok) {
+          const resposta = await res.json();
+          setCategorias(resposta);
+          return;
+        }
+        throw new Error('Não foi possível pegar os dados');
+      });
   }, []);
 
   return (
@@ -94,8 +94,8 @@ function Categoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
