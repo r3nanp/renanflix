@@ -24,8 +24,8 @@ function Home() {
       });
   }, []);
   return (
-    <PageDefault>
-      {dadosIniciais.length === 0 && (<div>Loading...</div>)}
+    <PageDefault paddingAll={0}>
+      {dadosIniciais.length === 0 && (<p>Loading...</p>)}
 
       {dadosIniciais.map((categoria, indice) => {
         if (indice === 0) {

@@ -11,12 +11,12 @@ import { Main } from './styles.js';
 import Menu from '../Menu';
 import Footer from '../Footer';
 
-function PageDefault(props) {
+function PageDefault({ children, paddingAll }) {
   return (
     <>
       <Menu />
-      <Main>
-        {props.children}
+      <Main paddingAll={paddingAll}>
+        {children}
       </Main>
       <Footer />
     </>
