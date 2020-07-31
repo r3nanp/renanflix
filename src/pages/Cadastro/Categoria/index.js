@@ -32,7 +32,7 @@ function Categoria() {
 
   useEffect(() => {
     if (window.location.href.includes('localhost')) {
-      const URL = 'http://localhost:8080/categorias';
+      const URL = 'https://renanflix.herokuapp.com/categorias';
       fetch(URL)
         .then(async (res) => {
           if (res.ok) {
