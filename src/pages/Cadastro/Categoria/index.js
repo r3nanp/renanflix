@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import useForm from '../../../Hooks/useForm';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import { Button } from './styles';
@@ -13,22 +14,9 @@ function Categoria() {
     cor: '',
   };
 
+  const { handleChange, valores, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [valores, setValores] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infos) {
-    setValue(
-      infos.target.getAttribute('name'),
-      infos.target.value,
-    );
-  }
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
@@ -59,7 +47,7 @@ function Categoria() {
           valores,
         ]);
 
-        setValores(valoresIniciais);
+        clearForm();
       }}
       >
 
@@ -94,7 +82,7 @@ function Categoria() {
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria}`}>
+          <li key={`${categoria.titulo}`}>
             {categoria.titulo}
           </li>
         ))}

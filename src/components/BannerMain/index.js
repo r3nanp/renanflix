@@ -5,7 +5,7 @@ import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles
 function getYouTubeId(youtubeURL) {
   return youtubeURL
     .replace(
-      /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/, 
+      /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
       'BjC0KUxiMhc',
     );
 }

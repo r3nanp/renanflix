@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
 } from 'react-router-dom';
 
 import Button from './components/Button';
@@ -12,7 +12,9 @@ import Video from './pages/Cadastro/Video';
 import Categoria from './pages/Cadastro/Categoria';
 
 const error = () => (
-  <div> 404 
+  <div>
+    {' '}
+    404
     <Button href="https://mariosouto.com/flappy-bird-devsoutinho/">
       Página não encontrada
     </Button>
@@ -28,5 +30,5 @@ ReactDOM.render(
       <Route component={error} />
     </Switch>
   </Router>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

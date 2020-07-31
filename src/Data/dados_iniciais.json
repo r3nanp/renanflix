@@ -11,7 +11,7 @@
           "url": "https://youtu.be/GCdwKhTtNNw"
         },
         {
-          "titulo": "Clhorine - Twenty One Pilots",
+          "titulo": "Chlorine - Twenty One Pilots",
           "url": "https://youtu.be/eJnQBXmZ7Ek"
         },
         {
@@ -113,9 +113,6 @@
     {
       "titulo": "Games",
       "cor": "red",
-      "link_extra": {
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
-      },
       "videos": [
         {
           "titulo": "Final Fantasy 7",
