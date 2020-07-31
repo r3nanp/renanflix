@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import useForm from '../../../Hooks/useForm';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
-import { Button } from './styles';
+import Button from '../../../components/Button';
 
 function Categoria() {
   const valoresIniciais = {
