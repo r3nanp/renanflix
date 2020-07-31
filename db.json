@@ -30,7 +30,7 @@
       "titulo": "Twenty One Pilots",
       "cor": "#6b5be2"
     }
-   ],
+  ],
   "videos": [
     {
       "id": 1,
@@ -84,7 +84,7 @@
       "id": 9,
       "categoriaId": 1,
       "titulo": "Clint Eastwood - Gorillaz",
-      "url":"https://www.youtube.com/watch?v=1V_xRb0x9aw"
+      "url": "https://www.youtube.com/watch?v=1V_xRb0x9aw"
     },
     {
       "id": 10,
@@ -109,7 +109,7 @@
       "categoriaId": 2,
       "titulo": "Someday",
       "url": "https://youtu.be/knU9gRUWCno"
-    }, 
+    },
     {
       "id": 14,
       "categoriaId": 2,
@@ -223,6 +223,12 @@
       "categoriaId": 6,
       "titulo": "Heavydirtysoul",
       "url": "https://www.youtube.com/watch?v=r_9Kf0D5BTs"
+    },
+    {
+      "titulo": "Arctic Monkeys",
+      "url": "https://www.youtube.com/watch?v=bpOSxM0rNPM",
+      "categoriaId": 1,
+      "id": 32
     }
   ]
 }

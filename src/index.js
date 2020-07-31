@@ -15,7 +15,7 @@ const error = () => (
   <div>
     {' '}
     404
-    <Button href="https://mariosouto.com/flappy-bird-devsoutinho/">
+    <Button to="https://mariosouto.com/flappy-bird-devsoutinho/">
       Página não encontrada
     </Button>
   </div>

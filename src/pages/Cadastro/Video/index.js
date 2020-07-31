@@ -7,7 +7,6 @@ import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import useForm from '../../../Hooks/useForm';
 import FormField from '../../../components/FormField';
-import Button from '../../../components/Button';
 
 import videosRepository from '../../../respositories/videos';
 import categoriasRepository from '../../../respositories/categorias';
@@ -15,7 +14,7 @@ import categoriasRepository from '../../../respositories/categorias';
 function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
-  const categoryTitles = categorias.map(({ titulo }) => titulo);
+  const categoryTitles = categorias.map(({ titulo }) => titulo)
   const { handleChange, valores } = useForm({
     titulo: 'Arctic Monkeys',
     url: 'https://www.youtube.com/watch?v=bpOSxM0rNPM',
@@ -73,9 +72,9 @@ function CadastroVideo() {
           suggestions={categoryTitles}
         />
 
-        <Button type="submit">
+        <button type="submit">
           Cadastrar
-        </Button>
+        </button>
       </form>
 
       <br />
