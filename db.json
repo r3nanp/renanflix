@@ -1,0 +1,22 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Indie Music",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 2,
+      "titulo": "The Strokes",
+      "cor": "#00C86F"
+    }
+   ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Clint Eastwood - Gorillaz",
+      "url": "https://www.youtube.com/watch?v=1V_xRb0x9aw"
+    }
+  ]
+}
