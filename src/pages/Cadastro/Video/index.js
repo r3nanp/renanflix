@@ -17,10 +17,12 @@ function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
-  const { handleChange, valores } = useForm({
-    titulo: 'Arctic Monkeys',
-    url: 'https://www.youtube.com/watch?v=bpOSxM0rNPM',
-    categoria: 'Indie Music',
+  const form = useForm({
+    valoresIniciais: {
+      titulo: 'Arctic Monkeys',
+      url: 'https://www.youtube.com/watch?v=bpOSxM0rNPM',
+      categoria: 'Indie Music',
+    },
   });
 
   useEffect(() => {
@@ -38,16 +40,16 @@ function CadastroVideo() {
       <form onSubmit={(event) => {
         event.preventDefault();
         const categoriaEscolhida = categorias.find((categoria) => {
-          return categoria.titulo === valores.categoria;
+          return categoria.titulo === form.valores.categoria;
         });
 
         videosRepository.create({
-          titulo: valores.titulo,
-          url: valores.url,
+          titulo: form.titulo,
+          url: form.url,
           categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
-            <div>Cadastrado com sucesso!</div>;
+            <p>Cadastrado com sucesso!</p>;
             history.push('/');
           });
       }}
@@ -55,23 +57,26 @@ function CadastroVideo() {
         <FormField
           label="Título do Vídeo"
           name="titulo"
-          value={valores.titulo}
-          onChange={handleChange}
+          value={form.valores.titulo}
+          onBlur={form.handleBlur}
+          onChange={form.handleChange}
         />
 
         <FormField
           label="URL"
           name="url"
-          value={valores.url}
-          onChange={handleChange}
+          value={form.valores.url}
+          onBlur={form.handleBlur}
+          onChange={form.handleChange}
         />
 
         <FormField
           label="Categoria"
           name="categoria"
-          value={valores.categoria}
-          onChange={handleChange}
+          value={form.valores.categoria}
+          onBlur={form.handleBlur}
           suggestions={categoryTitles}
+          onChange={form.handleChange}
         />
 
         <br />

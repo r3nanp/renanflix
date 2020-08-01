@@ -1,7 +1,10 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-console */
 import { useState } from 'react';
 
-function useForm(valoresIniciais) {
+function useForm({ valoresIniciais }) {
+  const [touched, setTouchedFields] = useState({});
+  const [errors, setErrors] = useState({});
   const [valores, setValores] = useState(valoresIniciais);
 
   function setValue(chave, valor) {
@@ -18,12 +21,24 @@ function useForm(valoresIniciais) {
     );
   }
 
+  function handleBlur(event) {
+    const fieldName = event.target.getAttribute('name');
+    console.log(fieldName);
+    setTouchedFields({
+      ...touched,
+      [fieldName]: true,
+    });
+  }
+
   function clearForm() {
     setValores(valoresIniciais);
   }
 
   return {
     valores,
+    errors,
+    setErrors,
+    handleBlur,
     handleChange,
     clearForm,
   };
