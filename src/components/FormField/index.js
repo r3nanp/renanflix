@@ -13,6 +13,7 @@ function FormField({
 
   const hasValue = Boolean(value.length);
   const hasSuggestions = Boolean(suggestions.length);
+
   return (
     <Wrapper>
       <Label

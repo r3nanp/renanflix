@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable no-unused-expressions */
 /* eslint-disable arrow-body-style */
 /* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
@@ -8,13 +10,13 @@ import PageDefault from '../../../components/PageDefault';
 import useForm from '../../../Hooks/useForm';
 import FormField from '../../../components/FormField';
 
-import videosRepository from '../../../respositories/videos';
-import categoriasRepository from '../../../respositories/categorias';
+import videosRepository from '../../../repositories/videos';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
-  const categoryTitles = categorias.map(({ titulo }) => titulo)
+  const categoryTitles = categorias.map(({ titulo }) => titulo);
   const { handleChange, valores } = useForm({
     titulo: 'Arctic Monkeys',
     url: 'https://www.youtube.com/watch?v=bpOSxM0rNPM',
@@ -45,7 +47,7 @@ function CadastroVideo() {
           categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
-            console.log('Cadastrou com sucesso!');
+            <div>Cadastrado com sucesso!</div>;
             history.push('/');
           });
       }}
@@ -72,6 +74,7 @@ function CadastroVideo() {
           suggestions={categoryTitles}
         />
 
+        <br />
         <button type="submit">
           Cadastrar
         </button>

@@ -1,11 +1,13 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import useForm from '../../../Hooks/useForm';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
-import Button from '../../../components/Button';
+
+import { Items } from './styles.js';
 
 function Categoria() {
   const valoresIniciais = {
@@ -75,18 +77,18 @@ function Categoria() {
           onChange={handleChange}
         />
 
-        <Button>
+        <button type="submit">
           Cadastrar
-        </Button>
+        </button>
       </form>
 
-      <ul>
+      <Items>
         {categorias.map((categoria) => (
           <li key={`${categoria.titulo}`}>
             {categoria.titulo}
           </li>
         ))}
-      </ul>
+      </Items>
 
       <Link to="/">
         Home

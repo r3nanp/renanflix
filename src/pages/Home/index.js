@@ -5,7 +5,7 @@ import PageDefault from '../../components/PageDefault';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 
-import categoriasRepository from '../../respositories/categorias';
+import categoriasRepository from '../../repositories/categorias';
 
 // import dadosIniciais from '../../Data/dados_iniciais.json';
 
