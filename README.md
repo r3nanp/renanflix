@@ -7,5 +7,4 @@ https://renanflix.netlify.app/
 ### Bibliotecas utilizadas
 * react-router-dom
 * styled-components
-
-### Screenshot
+* json-server
