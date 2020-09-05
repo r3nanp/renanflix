@@ -23,7 +23,7 @@ function getAllWithVideos() {
         return resposta;
       }
 
-      throw new Error('Não foi possível pegar os dados :(');
+      throw new Error('Não foi possível pegar os dados');
     });
 }
 
