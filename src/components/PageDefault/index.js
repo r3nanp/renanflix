@@ -5,7 +5,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 
-import '../../GlobalStyles.css';
+import GlobalStyles from '../../GlobalStyles';
 import { Main } from './styles.js';
 
 import Menu from '../Menu';
@@ -14,6 +14,7 @@ import Footer from '../Footer';
 function PageDefault({ children, paddingAll }) {
   return (
     <>
+      <GlobalStyles />
       <Menu />
       <Main paddingAll={paddingAll}>
         {children}

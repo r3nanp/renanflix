@@ -13,9 +13,10 @@ export const FooterBase = styled.footer`
   > a{
     cursor: pointer;
 
-    >img{
+    > img {
       width: 40px;
       height: 40px;
+      background: var(--white);
     }
     &:hover{
       opacity: 1;
