@@ -23,7 +23,6 @@ function useForm({ valoresIniciais }) {
 
   function handleBlur(event) {
     const fieldName = event.target.getAttribute('name');
-    console.log(fieldName);
     setTouchedFields({
       ...touched,
       [fieldName]: true,
