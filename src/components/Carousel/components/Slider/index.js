@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable linebreak-style */
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react'
 import SlickSlider from 'react-slick'
@@ -32,7 +34,7 @@ const Container = styled.ul`
 
 export const SliderItem = styled.li`
   margin-right: 16px;
-  img {
+  > img {
     margin: 16px;
     width: 298px;
     height: 197px;
@@ -45,7 +47,7 @@ const Slider = ({ children }) => (
     <SlickSlider
       {...{
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 300,
         centerMode: false,
         variableWidth: true,
@@ -57,4 +59,4 @@ const Slider = ({ children }) => (
   </Container>
 )
 
-export default Slider
+export default Slider;

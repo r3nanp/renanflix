@@ -1,10 +1,11 @@
+/* eslint-disable no-trailing-spaces */
 /* eslint-disable linebreak-style */
 /* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 
 import useForm from '../../../Hooks/useForm'
 import PageDefault from '../../../components/PageDefault'
+import Button from '../../../components/Button'
 import FormField from '../../../components/FormField'
 
 import { Items, Span, Heading } from './styles.js'
@@ -90,15 +91,14 @@ function Categoria() {
         <button type="submit">Cadastrar</button>
       </form>
       
-
       <Heading>Categorias existentes</Heading>
       <Items>
-        {categorias.map(categoria => (
+        {categorias.map((categoria) => (
           <li key={`${categoria.titulo}`}>{categoria.titulo}</li>
         ))}
       </Items>
 
-      <Link to="/">Home</Link>
+      <Button to="/">Home</Button>
     </PageDefault>
   )
 }

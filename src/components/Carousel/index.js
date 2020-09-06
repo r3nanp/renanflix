@@ -1,3 +1,6 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable prefer-destructuring */
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
