@@ -3,9 +3,22 @@
 import { useState } from 'react';
 
 function useForm({ valoresIniciais }) {
-  const [touched, setTouchedFields] = useState({});
-  const [errors, setErrors] = useState({});
+  const [touched, setTouchedFields] = useState(valoresIniciais);
   const [valores, setValores] = useState(valoresIniciais);
+
+  function validate(valor) {
+    const errors = {};
+
+    if (!valor.nome) {
+      errors.nome = 'Insira um nome válido'
+    }
+
+    if (!valor.descricao) {
+      errors.descricao = 'Insira uma descrição válida'
+    }
+
+    return errors;
+  }
 
   function setValue(chave, valor) {
     setValores({
@@ -21,8 +34,8 @@ function useForm({ valoresIniciais }) {
     );
   }
 
-  function handleBlur(event) {
-    const fieldName = event.target.getAttribute('name');
+  function handleBlur(infos) {
+    const fieldName = infos.target.getAttribute('name');
     setTouchedFields({
       ...touched,
       [fieldName]: true,
@@ -35,8 +48,7 @@ function useForm({ valoresIniciais }) {
 
   return {
     valores,
-    errors,
-    setErrors,
+    validate,
     handleBlur,
     handleChange,
     clearForm,

@@ -80,7 +80,7 @@ export const BannerMainContainer = styled.section`
 
   &:after,
   &:before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     left: 0;
