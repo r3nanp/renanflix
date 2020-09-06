@@ -6,9 +6,10 @@ import React, { useState, useEffect } from 'react'
 import useForm from '../../../Hooks/useForm'
 import PageDefault from '../../../components/PageDefault'
 import Button from '../../../components/Button'
+import Span from '../../../components/Span'
 import FormField from '../../../components/FormField'
 
-import { Items, Span, Heading } from './styles.js'
+import { Items, Heading } from './styles.js'
 
 function Categoria() {
   const valoresIniciais = {
@@ -67,7 +68,7 @@ function Categoria() {
           onChange={handleChange}
           onBlur={handleBlur}
         />
-        {errors.nome && <Span className="error">{errors.nome}</Span>}
+        {errors.nome && <Span>{errors.nome}</Span>}
 
         <FormField
           label="Descrição"
@@ -77,7 +78,7 @@ function Categoria() {
           onChange={handleChange}
           onBlur={handleBlur}
         />
-        {errors.descricao && <Span className="error">{errors.descricao}</Span>}
+        {errors.descricao && <Span>{errors.descricao}</Span>}
 
         <FormField
           label="Cor"
