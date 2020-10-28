@@ -32,7 +32,7 @@ function CadastroVideo() {
   })
 
   useEffect(() => {
-    categoriasRepository.getAll().then((categoriasFromServer) => {
+    categoriasRepository.getAll().then(categoriasFromServer => {
       setCategorias(categoriasFromServer)
     })
   }, [])
@@ -42,12 +42,12 @@ function CadastroVideo() {
       <h1>Cadastro de Video</h1>
 
       <form
-        onSubmit={(event) => {
+        onSubmit={event => {
           event.preventDefault()
           setVideoErrors(videoValidate(valores))
-          const categoriaEscolhida = categorias.find((categoria) => {
-            categoria.titulo === valores.categoria;
-          });
+          const categoriaEscolhida = categorias.find(categoria => {
+            categoria.titulo === valores.categoria
+          })
 
           videosRepository
             .create({
@@ -56,7 +56,7 @@ function CadastroVideo() {
               categoriaId: categoriaEscolhida.id,
             })
             .then(() => {
-              <p>Cadastrado com sucesso!</p>;
+              <p>Cadastrado com sucesso!</p>
               history.push('/')
             })
         }}
@@ -86,7 +86,7 @@ function CadastroVideo() {
           suggestions={categoryTitles}
           onChange={handleChange}
         />
-        {videoErrors.categoria && <Span>{videoErrors.categoria}</Span>} 
+        {videoErrors.categoria && <Span>{videoErrors.categoria}</Span>}
 
         <br />
         <button type="submit">Cadastrar</button>

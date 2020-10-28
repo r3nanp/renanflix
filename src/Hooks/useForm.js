@@ -2,40 +2,40 @@
 /* eslint-disable no-console */
 import { useState } from 'react'
 
-function useForm({ valoresIniciais }) {
-  const [touched, setTouchedFields] = useState(valoresIniciais)
-  const [valores, setValores] = useState(valoresIniciais)
+function useForm({ initialValues }) {
+  const [touched, setTouchedFields] = useState(initialValues)
+  const [valores, setValores] = useState(initialValues)
 
   function validate(valor) {
     const errors = {}
 
     if (!valor.nome) {
-      errors.nome = 'Insira um nome válido';
+      errors.nome = 'Insira um nome válido'
     }
 
     if (!valor.descricao) {
-      errors.descricao = 'Insira uma descrição válida';
+      errors.descricao = 'Insira uma descrição válida'
     }
 
-    return errors;
+    return errors
   }
 
   function videoValidate(value) {
-    const errors = {};
+    const errors = {}
 
     if (
       !value.url ||
       !value.url.includes('https://youtube.com') ||
       !value.url.includes('https://youtu.be')
     ) {
-      errors.url = 'Insira uma url do Youtube válida!!';
+      errors.url = 'Insira uma url do Youtube válida!!'
     }
 
     if (!value.categoria) {
-      errors.categoria = 'Insira uma categoria válida';
+      errors.categoria = 'Insira uma categoria válida'
     }
 
-    return errors;
+    return errors
   }
 
   function setValue(chave, valor) {
@@ -58,7 +58,7 @@ function useForm({ valoresIniciais }) {
   }
 
   function clearForm() {
-    setValores(valoresIniciais)
+    setValores(initialValues)
   }
 
   return {
