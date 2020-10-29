@@ -4,7 +4,7 @@ import { FooterBase } from './styles'
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://linkedin.com/in/r3nanp" target="_blank">
+      <a href="https://linkedin.com/in/r3nanp" target="_blank" rel="noopener noreferrer">
         <img
           src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg"
           alt="Logo"
