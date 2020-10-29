@@ -1,9 +1,3 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable linebreak-style */
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable arrow-body-style */
-/* eslint-disable no-console */
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
@@ -21,7 +15,7 @@ function CadastroVideo() {
 
   const categoryTitles = categorias.map(({ titulo }) => titulo)
 
-  const { handleChange, values, videoValidate } = useForm({
+  const { handleChange, values } = useForm({
     initialValues: {
       titulo: 'Arctic Monkeys',
       url: 'https://www.youtube.com/watch?v=bpOSxM0rNPM',
@@ -31,10 +25,10 @@ function CadastroVideo() {
 
   function handleSubmit(event) {
     event.preventDefault()
-    videoValidate()
-    const categoriaEscolhida = categorias.find(categoria => {
-      categoria.titulo === values.categoria
-    })
+
+    const categoriaEscolhida = categorias.find(
+      categoria => categoria.titulo === values.categoria
+    )
 
     videosRepository
       .create({
@@ -43,8 +37,8 @@ function CadastroVideo() {
         categoriaId: categoriaEscolhida.id,
       })
       .then(() => {
-        <p>Cadastrado com sucesso!</p>
         history.push('/')
+        return <p>Cadastrado com sucesso!</p>
       })
   }
 
@@ -58,9 +52,7 @@ function CadastroVideo() {
     <PageDefault>
       <h1>Cadastro de Video</h1>
 
-      <form
-        onSubmit={handleSubmit}
-      >
+      <form onSubmit={handleSubmit}>
         <FormField
           label="Título do Vídeo"
           name="titulo"

@@ -4,10 +4,9 @@ import { useState } from 'react'
 
 export default function useForm({ initialValues }) {
   const [values, setValues] = useState(initialValues)
+  const [errors, setErrors] = useState({})
 
   function videoValidate(value) {
-    const errors = {}
-
     if (
       !value.url ||
       !value.url.includes('https://youtube.com') ||
@@ -19,8 +18,8 @@ export default function useForm({ initialValues }) {
     if (!value.categoria) {
       errors.categoria = 'Insira uma categoria válida'
     }
-
-    return errors
+    
+    setErrors(errors)
   }
 
   function changeValues(key, index) {
