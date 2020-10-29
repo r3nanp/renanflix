@@ -21,6 +21,7 @@ function Home() {
         console.log(err.message)
       })
   }, [])
+  
   return (
     <PageDefault paddingAll={0}>
       {dadosIniciais.length === 0 && <LoadingPage /> }

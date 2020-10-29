@@ -1,30 +1,28 @@
 /* eslint-disable linebreak-style */
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Button = styled(Link)`
   color: var(--white);
   background: var(--black);
   border: 1px solid var(--white);
-  box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  outline: none;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 
-  &:hover{
-    opacity: .7;
+  &:hover {
+    opacity: 0.7;
   }
 
   &:hover,
   &:focus {
-    opacity: .5;
+    opacity: 0.5;
   }
 
   @media (max-width: 800px) {
@@ -39,6 +37,6 @@ const Button = styled(Link)`
       text-align: center;
     }
   }
-`;
+`
 
-export default Button;
+export default Button
