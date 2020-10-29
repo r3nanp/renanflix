@@ -14,12 +14,6 @@ export const Items = styled.ul`
   }
 `
 
-export const Span = styled.span`
-  font-size: 15px;
-  margin-top: 3px;
-  color: red;
-`
-
 export const Heading = styled.h2`
   padding: 10px 0 20px;
 

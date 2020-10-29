@@ -3,38 +3,38 @@
 /* eslint-disable import/extensions */
 import React, { useState, useEffect } from 'react'
 
+import config from '../../../config'
+
 import useForm from '../../../Hooks/useForm'
 import PageDefault from '../../../components/PageDefault'
 import Button from '../../../components/Button'
-import Span from '../../../components/Span'
 import FormField from '../../../components/FormField'
 
 import { Items, Heading } from './styles.js'
 
 function Categoria() {
-  const valoresIniciais = {
+  
+  function handleSubmit(event) {
+    event.preventDefault()
+    setCategorias([...categorias, values])
+
+    clearForm()
+  }
+
+  const initialValues = {
     nome: '',
     descricao: '',
     cor: '',
   }
 
-  const {
-    handleChange,
-    valores,
-    clearForm,
-    handleBlur,
-    validate,
-  } = useForm({
-    valoresIniciais,
+  const { handleChange, values, clearForm } = useForm({
+    initialValues,
   })
+
   const [categorias, setCategorias] = useState([])
-  const [errors, setErrors] = useState({})
 
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://renanflix.herokuapp.com/categorias'
-    fetch(URL).then(async res => {
+    fetch(`${config.URL}/categorias`).then(async res => {
       if (res.ok) {
         const resposta = await res.json()
         setCategorias(resposta)
@@ -48,53 +48,40 @@ function Categoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {valores.nome}
+        {values.nome}
       </h1>
 
-      <form
-        onSubmit={function handleSubmit(infos) {
-          infos.preventDefault()
-          setErrors(validate(valores.nome))
-          setCategorias([...categorias, valores])
-
-          clearForm()
-        }}
-      >
+      <form onSubmit={handleSubmit}>
         <FormField
           label="Nome da categoria"
           type="text"
           name="nome"
-          value={valores.nome}
+          value={values.nome}
           onChange={handleChange}
-          onBlur={handleBlur}
         />
-        {errors.nome && <Span>{errors.nome}</Span>}
 
         <FormField
           label="Descrição"
           type="textarea"
           name="descricao"
-          value={valores.descricao}
+          value={values.descricao}
           onChange={handleChange}
-          onBlur={handleBlur}
         />
-        {errors.descricao && <Span>{errors.descricao}</Span>}
 
         <FormField
           label="Cor"
           type="color"
           name="cor"
-          value={valores.cor}
+          value={values.cor}
           onChange={handleChange}
-          onBlur={handleBlur}
         />
 
         <button type="submit">Cadastrar</button>
       </form>
-      
+
       <Heading>Categorias existentes</Heading>
       <Items>
-        {categorias.map((categoria) => (
+        {categorias.map(categoria => (
           <li key={`${categoria.titulo}`}>{categoria.titulo}</li>
         ))}
       </Items>

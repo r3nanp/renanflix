@@ -2,23 +2,8 @@
 /* eslint-disable no-console */
 import { useState } from 'react'
 
-function useForm({ initialValues }) {
-  const [touched, setTouchedFields] = useState(initialValues)
-  const [valores, setValores] = useState(initialValues)
-
-  function validate(valor) {
-    const errors = {}
-
-    if (!valor.nome) {
-      errors.nome = 'Insira um nome válido'
-    }
-
-    if (!valor.descricao) {
-      errors.descricao = 'Insira uma descrição válida'
-    }
-
-    return errors
-  }
+export default function useForm({ initialValues }) {
+  const [values, setValues] = useState(initialValues)
 
   function videoValidate(value) {
     const errors = {}
@@ -38,37 +23,25 @@ function useForm({ initialValues }) {
     return errors
   }
 
-  function setValue(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor,
+  function changeValues(key, index) {
+    setValues({
+      ...values,
+      [key]: index,
     })
   }
 
   function handleChange(infos) {
-    setValue(infos.target.getAttribute('name'), infos.target.value)
-  }
-
-  function handleBlur(info) {
-    const fieldName = info.target.getAttribute('name')
-    setTouchedFields({
-      ...touched,
-      [fieldName]: true,
-    })
+    changeValues(infos.target.getAttribute('name'), infos.target.value)
   }
 
   function clearForm() {
-    setValores(initialValues)
+    setValues(initialValues)
   }
 
   return {
-    valores,
-    validate,
+    values,
     videoValidate,
-    handleBlur,
     handleChange,
     clearForm,
   }
 }
-
-export default useForm

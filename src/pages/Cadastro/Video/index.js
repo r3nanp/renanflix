@@ -10,7 +10,6 @@ import { useHistory } from 'react-router-dom'
 import PageDefault from '../../../components/PageDefault'
 import FormField from '../../../components/FormField'
 import Button from '../../../components/Button'
-import Span from '../../../components/Span'
 import useForm from '../../../Hooks/useForm'
 
 import videosRepository from '../../../repositories/videos'
@@ -19,21 +18,39 @@ import categoriasRepository from '../../../repositories/categorias'
 function CadastroVideo() {
   const history = useHistory()
   const [categorias, setCategorias] = useState([])
-  const [videoErrors, setVideoErrors] = useState({})
 
   const categoryTitles = categorias.map(({ titulo }) => titulo)
 
-  const { handleChange, valores, handleBlur, videoValidate } = useForm({
-    valoresIniciais: {
+  const { handleChange, values, videoValidate } = useForm({
+    initialValues: {
       titulo: 'Arctic Monkeys',
       url: 'https://www.youtube.com/watch?v=bpOSxM0rNPM',
       categoria: 'Indie Music',
     },
   })
 
+  function handleSubmit(event) {
+    event.preventDefault()
+    videoValidate()
+    const categoriaEscolhida = categorias.find(categoria => {
+      categoria.titulo === values.categoria
+    })
+
+    videosRepository
+      .create({
+        titulo: values.titulo,
+        url: values.url,
+        categoriaId: categoriaEscolhida.id,
+      })
+      .then(() => {
+        <p>Cadastrado com sucesso!</p>
+        history.push('/')
+      })
+  }
+
   useEffect(() => {
-    categoriasRepository.getAll().then(categoriasFromServer => {
-      setCategorias(categoriasFromServer)
+    categoriasRepository.getAll().then(response => {
+      setCategorias(response)
     })
   }, [])
 
@@ -42,51 +59,29 @@ function CadastroVideo() {
       <h1>Cadastro de Video</h1>
 
       <form
-        onSubmit={event => {
-          event.preventDefault()
-          setVideoErrors(videoValidate(valores))
-          const categoriaEscolhida = categorias.find(categoria => {
-            categoria.titulo === valores.categoria
-          })
-
-          videosRepository
-            .create({
-              titulo: valores.titulo,
-              url: valores.url,
-              categoriaId: categoriaEscolhida.id,
-            })
-            .then(() => {
-              <p>Cadastrado com sucesso!</p>
-              history.push('/')
-            })
-        }}
+        onSubmit={handleSubmit}
       >
         <FormField
           label="Título do Vídeo"
           name="titulo"
-          value={valores.titulo}
-          onBlur={handleBlur}
+          value={values.titulo}
           onChange={handleChange}
         />
 
         <FormField
           label="URL"
           name="url"
-          value={valores.url}
-          onBlur={handleBlur}
+          value={values.url}
           onChange={handleChange}
         />
-        {videoErrors.url && <Span>{videoErrors.url}</Span>}
 
         <FormField
           label="Categoria"
           name="categoria"
-          value={valores.categoria}
-          onBlur={handleBlur}
+          value={values.categoria}
           suggestions={categoryTitles}
           onChange={handleChange}
         />
-        {videoErrors.categoria && <Span>{videoErrors.categoria}</Span>}
 
         <br />
         <button type="submit">Cadastrar</button>
