@@ -8,7 +8,7 @@ import styled from 'styled-components'
 const Container = styled.ul`
   padding: 0;
   margin: 0;
-  
+
   .slick-disabled {
     display: none;
     pointer-events: none;
@@ -55,6 +55,7 @@ const Slider = ({ children }) => {
         {...{
           dots: false,
           infinite: false,
+          arrows: true,
           speed: 300,
           centerMode: false,
           variableWidth: true,
