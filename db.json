@@ -1,233 +1,233 @@
 {
-  "categorias": [
+  "categories": [
     {
       "id": 1,
-      "titulo": "Indie Music",
-      "cor": "#6BD1FF"
+      "title": "Indie Music",
+      "color": "#6BD1FF"
     },
     {
       "id": 2,
-      "titulo": "The Strokes",
-      "cor": "#00C86F"
+      "title": "The Strokes",
+      "color": "#00C86F"
     },
     {
       "id": 3,
-      "titulo": "Arctic Monkeys",
-      "cor": "darkblue"
+      "title": "Arctic Monkeys",
+      "color": "darkblue"
     },
     {
       "id": 4,
-      "titulo": "Filmes",
-      "cor": "orange"
+      "title": "Queen",
+      "color": "orange"
     },
     {
       "id": 5,
-      "titulo": "Games",
-      "cor": "red"
+      "title": "Pixies",
+      "color": "red"
     },
     {
       "id": 6,
-      "titulo": "Twenty One Pilots",
-      "cor": "#6b5be2"
+      "title": "Twenty One Pilots",
+      "color": "#6b5be2"
     }
   ],
   "videos": [
     {
       "id": 1,
-      "categoriaId": 1,
-      "titulo": "Ode To The Mets",
+      "categoryId": 1,
+      "title": "Ode To The Mets",
       "url": "https://youtu.be/BjC0KUxiMhc"
     },
     {
       "id": 2,
-      "categoriaId": 1,
-      "titulo": "Sweater Weather - The Neighbourhood",
+      "categoryId": 1,
+      "title": "Sweater Weather - The Neighbourhood",
       "url": "https://youtu.be/GCdwKhTtNNw"
     },
     {
       "id": 3,
-      "categoriaId": 1,
-      "titulo": "Chlorine - Twenty One Pilots",
+      "categoryId": 1,
+      "title": "Chlorine - Twenty One Pilots",
       "url": "https://youtu.be/eJnQBXmZ7Ek"
     },
     {
       "id": 4,
-      "categoriaId": 1,
-      "titulo": "On Melancholy Hill - Gorillaz",
+      "categoryId": 1,
+      "title": "On Melancholy Hill - Gorillaz",
       "url": "https://youtu.be/04mfKJWDSzI"
     },
     {
       "id": 5,
-      "categoriaId": 1,
-      "titulo": "At the Door - The Strokes",
+      "categoryId": 1,
+      "title": "At the Door - The Strokes",
       "url": "https://www.youtube.com/watch?v=9CAz_vvsK9M"
     },
     {
       "id": 6,
-      "categoriaId": 1,
-      "titulo": "Are You Bored Yet? - Wallows",
+      "categoryId": 1,
+      "title": "Are You Bored Yet? - Wallows",
       "url": "https://youtu.be/wIgmyE5Juzw"
     },
     {
       "id": 7,
-      "categoriaId": 1,
-      "titulo": "These Days - Wallows",
+      "categoryId": 1,
+      "title": "These Days - Wallows",
       "url": "https://www.youtube.com/watch?v=pgWZQr7r0l0"
     },
     {
       "id": 8,
-      "categoriaId": 1,
-      "titulo": "Why'd Only Call Me When You're High?",
+      "categoryId": 1,
+      "title": "Why'd Only Call Me When You're High?",
       "url": "https://www.youtube.com/watch?v=6366dxFf-Os"
     },
     {
       "id": 9,
-      "categoriaId": 1,
-      "titulo": "Clint Eastwood - Gorillaz",
+      "categoryId": 1,
+      "title": "Clint Eastwood - Gorillaz",
       "url": "https://www.youtube.com/watch?v=1V_xRb0x9aw"
     },
     {
       "id": 10,
-      "categoriaId": 2,
-      "titulo": "Bad Decisions",
+      "categoryId": 2,
+      "title": "Bad Decisions",
       "url": "https://www.youtube.com/watch?v=5fbZTnZDvPA"
     },
     {
       "id": 11,
-      "categoriaId": 2,
-      "titulo": "Reptilia",
+      "categoryId": 2,
+      "title": "Reptilia",
       "url": "https://youtu.be/b8-tXG8KrWs"
     },
     {
       "id": 12,
-      "categoriaId": 2,
-      "titulo": "You Only Live Once",
+      "categoryId": 2,
+      "title": "You Only Live Once",
       "url": "https://youtu.be/pT68FS3YbQ4"
     },
     {
       "id": 13,
-      "categoriaId": 2,
-      "titulo": "Someday",
+      "categoryId": 2,
+      "title": "Someday",
       "url": "https://youtu.be/knU9gRUWCno"
     },
     {
       "id": 14,
-      "categoriaId": 2,
-      "titulo": "Hard to Explain",
+      "categoryId": 2,
+      "title": "Hard to Explain",
       "url": "https://youtu.be/BXkm6h6uq0k"
     },
     {
       "id": 15,
-      "categoriaId": 3,
-      "titulo": "Fluorescent Adolescent",
+      "categoryId": 3,
+      "title": "Fluorescent Adolescent",
       "url": "https://www.youtube.com/watch?v=ma9I9VBKPiw"
     },
     {
       "id": 16,
-      "categoriaId": 3,
-      "titulo": "Snap Out Of It",
+      "categoryId": 3,
+      "title": "Snap Out Of It",
       "url": "https://www.youtube.com/watch?v=H8tLS_NOWLs"
     },
     {
       "id": 17,
-      "categoriaId": 3,
-      "titulo": "Four Out of Five",
+      "categoryId": 3,
+      "title": "Four Out of Five",
       "url": "https://youtu.be/71Es-8FfATo"
     },
     {
       "id": 18,
-      "categoriaId": 3,
-      "titulo": "R U Mine?",
+      "categoryId": 3,
+      "title": "R U Mine?",
       "url": "https://www.youtube.com/watch?v=VQH8ZTgna3Q"
     },
     {
       "id": 19,
-      "categoriaId": 4,
-      "titulo": "Interestellar",
-      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+      "categoryId": 4,
+      "title": "Somebody to Love",
+      "url": "https://www.youtube.com/watch?v=kijpcUv-b8M"
     },
     {
       "id": 20,
-      "categoriaId": 4,
-      "titulo": "Gattaca",
-      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+      "categoryId": 4,
+      "title": "Love of My Life",
+      "url": "https://www.youtube.com/watch?v=sUJkCXE4sAA"
     },
     {
       "id": 21,
-      "categoriaId": 4,
-      "titulo": "A Chegada",
-      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+      "categoryId": 4,
+      "title": "Don't Stop Me Now",
+      "url": "https://www.youtube.com/watch?v=HgzGwKwLmgM"
     },
     {
       "id": 22,
-      "categoriaId": 4,
-      "titulo": "Feitiço do Tempo",
-      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+      "categoryId": 4,
+      "title": "Bohemian Rhapsody",
+      "url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
     },
     {
       "id": 23,
-      "categoriaId": 5,
-      "titulo": "Final Fantasy 7",
-      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+      "categoryId": 5,
+      "title": "Here Comes Your Men",
+      "url": "https://www.youtube.com/watch?v=tPgf_btTFlc"
     },
     {
       "id": 24,
-      "categoriaId": 5,
-      "titulo": "Assassins Creed Valhalla",
-      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+      "categoryId": 5,
+      "title": "Where Is My Mind?",
+      "url": "https://www.youtube.com/watch?v=N3oCS85HvpY"
     },
     {
       "id": 25,
-      "categoriaId": 5,
-      "titulo": "God of War 4",
-      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+      "categoryId": 5,
+      "title": "Here Comes Your Men",
+      "url": "https://www.youtube.com/watch?v=tPgf_btTFlc"
     },
     {
       "id": 26,
-      "categoriaId": 5,
-      "titulo": "Resident Evil 8",
-      "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+      "categoryId": 5,
+      "title": "Hey",
+      "url": "https://www.youtube.com/watch?v=tVCUAXOBF7w"
     },
     {
       "id": 27,
-      "categoriaId": 5,
-      "titulo": "Pokémon Let's Go Pikachu/Eevee",
-      "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+      "categoryId": 5,
+      "title": "Wave of Mutilation",
+      "url": "https://youtu.be/Q40-TT6swoE"
     },
     {
       "id": 28,
-      "categoriaId": 6,
-      "titulo": "My Blood",
+      "categoryId": 6,
+      "title": "My Blood",
       "url": "https://www.youtube.com/watch?v=8mn-FFjIbo8"
     },
     {
       "id": 29,
-      "categoriaId": 6,
-      "titulo": "Neon Gravestones",
+      "categoryId": 6,
+      "title": "Neon Gravestones",
       "url": "https://www.youtube.com/watch?v=5MeQ9rA2Ifg"
     },
     {
       "id": 30,
-      "categoriaId": 6,
-      "titulo": "Tear In My Heart",
+      "categoryId": 6,
+      "title": "Tear In My Heart",
       "url": "https://www.youtube.com/watch?v=nky4me4NP70"
     },
     {
       "id": 31,
-      "categoriaId": 6,
-      "titulo": "Car Radio",
+      "categoryId": 6,
+      "title": "Car Radio",
       "url": "https://www.youtube.com/watch?v=92XVwY54h5k"
     },
     {
       "id": 10,
-      "categoriaId": 6,
-      "titulo": "Heavydirtysoul",
+      "categoryId": 6,
+      "title": "Heavydirtysoul",
       "url": "https://www.youtube.com/watch?v=r_9Kf0D5BTs"
     },
     {
-      "titulo": "Arctic Monkeys",
+      "title": "Arctic Monkeys",
       "url": "https://www.youtube.com/watch?v=bpOSxM0rNPM",
-      "categoriaId": 1,
+      "categoryId": 1,
       "id": 32
     }
   ]
